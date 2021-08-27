@@ -1,0 +1,5 @@
+@import url("variable");
+body {
+  background: var(--main-color);
+}
+/*# sourceMappingURL=styles.css.map */
