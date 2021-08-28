@@ -1,4 +1,101 @@
-@import url("variable");
-body {
-    background: var(--main-color);
+@import "globals";
+@import "variables";
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    transition: all .4s ease;
+    font-family: 'Montserrat', sans-serif;
+    .max-width {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 600;
+        color: $logocolor1;
+        span {
+            color: $logocolor2;
+        }
+    }
+    .max-width .menu li {
+        list-style: none;
+        display: inline-block;
+    }
+    .max-width .menu li a {
+        color: $navColorFont;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 25px;
+        transition: color a.3s ease;
+    }
+}
+
+.navbar.sticky {
+    background: #471c1c;
+    padding: 15px 0;
+}
+
+.navbar.sticky .logo a span {
+    color: $navColorFont;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: $navColorFont;
+}
+
+.navbar .menu li a:hover {
+    color: $navColor
+}
+
+.menu-btn {
+    color: $navColorFont;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    display: flex;
+    background: url("../images/zamlogo.PNG") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: $homeColorFont;
+    min-height: 500px;
+    font-family: 'Montserrat', sans-serif;
+    .max-width {
+        margin: auto 0 auto 40px;
+    }
+    .home-content a {
+        display: inline-block;
+        background: $navColor;
+        color: #f1f2f1;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 15px 36px;
+        margin-top: 22px;
+        border-radius: 30px;
+        border: 2px solid $navColor;
+        transition: all .3s ease;
+    }
+}
+
+.home-content {
+    .text-1 {
+        font-size: 27px;
+    }
+    .text-2 {
+        font-size: 75px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .text-3 {
+        font-size: 40px;
+        margin: 5px 0;
+        span {
+            color: $navColor;
+            font-weight: 700;
+        }
+    }
 }

@@ -1,5 +1,157 @@
-@import url("variable");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 body {
-  background: var(--main-color);
+  margin: 0;
+  padding: 0;
+  background: #cacaccb7;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.home .home-content a:hover {
+  color: #d61939;
+  background: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .max-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 35px;
+  font-weight: 600;
+  color: #9ce499fb;
+}
+
+.navbar .logo a span {
+  color: #503c3cfb;
+}
+
+.navbar .max-width .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .max-width .menu li a {
+  color: #f1f2f1;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 25px;
+  -webkit-transition: color a 0.3s ease;
+  transition: color a 0.3s ease;
+}
+
+.navbar.sticky {
+  background: #471c1c;
+  padding: 15px 0;
+}
+
+.navbar.sticky .logo a span {
+  color: #f1f2f1;
+}
+
+.navbar.sticky .menu li a:hover {
+  color: #f1f2f1;
+}
+
+.navbar .menu li a:hover {
+  color: #d61939;
+}
+
+.menu-btn {
+  color: #f1f2f1;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../images/zamlogo.PNG") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  color: #351f03;
+  min-height: 500px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content a {
+  display: inline-block;
+  background: #d61939;
+  color: #f1f2f1;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 15px 36px;
+  margin-top: 22px;
+  border-radius: 30px;
+  border: 2px solid #d61939;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.home-content .text-1 {
+  font-size: 27px;
+}
+
+.home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.home-content .text-3 span {
+  color: #d61939;
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */
